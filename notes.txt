@@ -1,0 +1,30 @@
+
+APIs :
+	* omdbapi.com
+	* api.openweathermap.org
+	* unsplash.com
+	* https://appwrite.io/docs
+
+
+
+### Creer le fichier package.json :
+	> npm init
+
+### utilitaire nodemon : 
+	permet de prendre en charge les modifications sans avoir arreter le server manuellement
+	> npm i nodemon
+
+### filter():
+	pour faire une iteration avec une condition 
+
+### Mongoose :
+	Mongoose est un outil de modélisation d'objet MongoDB conçu pour fonctionner dans un environnement asynchrone. Mongoose prend en charge les promesses et les rappels
+
+
+title: "name post 12", content: "comtent post12", author: "author post 12", category: "cat-KKK", createdAt: "2022-08-24"
+
+title: "name post 12", content: "comtent post12", author: "author post 12", category: "cat-KKK", createdAt: "2022-08-24"
+
+
+
+    title: "name post 12", content: "comtent post12", author: "author post 12", category: "cat-KKK", createdAt: "2022-08-24"
