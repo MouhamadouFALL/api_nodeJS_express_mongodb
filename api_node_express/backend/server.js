@@ -53,7 +53,6 @@ app.get('/api/posts', (req, res) => {
 app.get('/api/posts/:id', (req, res) => {
     let identity = req.params.id
     Post.findById(identity, (e, post) => {
-
         if (e || !post) {
             res.status(400).send({
                 e: true,
@@ -110,8 +109,24 @@ app.put('/api/posts/:id', (req, res) => {
             })
         }
     })
-
 })
 
+app.delete('/api/posts/:id', (req, res) => {
+    let id = req.params.id
+    Post.deleteOne({_id: id}, (e) => {
+        if (e) {
+            res.status(400).send({
+                error : true,
+                message : `Failure to delete the Post: ${e}` 
+            })
+            return
+        }
+        else{
+            res.status(200).send({
+                message : `delete Post success!`
+            })
+        }
+    })
+})
 
 
